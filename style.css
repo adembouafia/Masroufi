@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+
+:root {
+  --main-bg: #ECE6D3;
+  --blue-1: #1D3A70;
+  --light-gray: #F9FAFB;
+  --secondary-text-color:#6B7280;
+  --success-trans: #1DAB87;
+}
+
+
+.iphone {
+  margin: 30px auto;
+  border: 10px solid black;
+  border-radius: 40px;
+  width: 320px;
+  height: 90vh;
+  position: relative;
+
+
+  box-shadow: 0px 20px 15px #33333335;
+
+}
+
+.notch {
+  z-index: 50;
+  top: 0;
+  translate: none;
+  left: 27%;
+  position: absolute;
+  background: #000000;
+  width: 150px;
+  height: 30px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.screen {
+  z-index: 10;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(#edbc0dc6, rgb(214, 206, 206));
+}
+
+.start_btn {
+  background-color: #260465;
+  height: 56px;
+  width: 287px;
+  border-radius: 16px;
+  font-family: Stardos Stencil;
+  font-size: 30px;
+  font-weight: bold;
+  color: #E7DBB1;
+  cursor: pointer;
+  box-shadow: 0 6px #999;
+}
+
+.start_btn:hover {
+  background-color: #3e08a2df;
+}
+
+.start_btn:active {
+  background-color: #3e08a2df;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.camera {
+  position: absolute;
+  bottom: 8px;
+  right: 20px;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: .2rem solid #1e1f22;
+  background: #447bb5a6;
+}
+
+.speaker {
+  position: absolute;
+  top: 5px;
+  right: 3.9rem;
+  width: 50%;
+  height: .6rem;
+  background: #333;
+  border-radius: .2rem;
+}
+
+.item1 {
+  font-size: 12px;
+  color: #1D3A70;
+}
+
+header {
+  background-color: var(--main-bg);
+}
+
+.head {
+  background-color: var(--main-bg);
+  color: var(--blue-1);
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.head2{
+  background-color: var(--main-bg);
+  color: var(--blue-1);
+}
+
+.avatar {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.nav-actions{
+  background-color: var(--light-gray);
+  margin-top: 60px;
+  color: var(--blue-1);
+  border-radius: 15px;
+  width: 90%;
+}
+
+.action-items{
+  cursor: pointer;
+}
+
+
+.notif{
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.notif-light
+{
+  border: 2px solid var(--secondary-text-color);
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+
+/* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
+/** {
+  scrollbar-width: thin;
+  scrollbar-color: #BFBFBF #DFE9EB;
+}*/
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #DFE9EB;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #B8C0C2;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #B8C0C2;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #BFBFBF;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #969696;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #6B6B6B;
+}
+
+.date{
+  color: var(--secondary-text-color);
+}
+
+.transaction{
+  color: var(--blue-1); 
+}
+
+.item-title{
+  color: var(--blue-1);
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 0 important;
+}
+
+.ajout{
+  color:  var(--success-trans);
+}
+
+.payement{
+  color: var(--blue-1);
+}
+
+
+.icon-item{
+  background-color: var(--light-gray);
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  
+}
+
+.type-transaction{
+  color:var(--secondary-text-color);
+  font-size: 11px;
+}
+
+.nav-title{
+  color: var(--secondary-text-color);
+  font-size: 10px;
+}
+
+.secondary-text-color{
+  color: var(--secondary-text-color);
+}
+
+.nav-title:hover{
+  color: var(--blue-1);
+}
+
+.nav-title:active{
+  color: var(--blue-1);
+}
+
+.title1{
+  color: var(--blue-1);
+} 
+
+.month{
+  color: var(--secondary-text-color);
+}
+
+.item-quot{
+  border: 2px solid var(--secondary-text-color);
+  border-radius: 10px;
+  width: 120px;
+  min-height: 60px;
+  cursor: pointer;
+}
+
+
+.selected {
+  font-weight: bold;
+}
+
+/*overwriting properties mta3 l bootstrap*/
+p{
+  margin: 0 !important;
+}
+h3{
+  margin: 0 !important;
+}
+
+/*pointer lel items fil profil page*/
+.item-prop{
+  cursor: pointer;
+}
+
+/*color mta3 l icons fel profil page*/
+i{
+  color: var(--blue-1);
+}
+
+.ajout-epargne{
+  color: rgb(0, 178, 0);
+  font-weight: 700;
+}
+
+.item-tirelire{
+  color: var(--blue-1);
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0 important;
+}
+
+.transaction-tirelire{
+  color:var(--secondary-text-color);
+  font-size: 12px;
+}
+
+.sad-bunny{
+  color: var(--secondary-text-color);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.sort-group{
+  width: 50%;
+}
+
+.sort{
+  width: 60px;
+}
+
+label{
+  display: inline-block;
+  width:60px
+}

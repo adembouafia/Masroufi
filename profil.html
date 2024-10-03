@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-minimal@4/minimal.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div
+        class="d-flex justify-content-between w-100 fixed-top"
+        style="background-color: #ffffff"
+      >
+        <div id="datetime" class="h6 ms-3 mt-1"></div>
+        <div class="mx-2">
+          <img src="assets/icons/network.svg" style="width: 15px" alt="" />
+          <img src="assets/icons/wifi.svg" style="width: 15px" alt="" />
+          <img src="assets/icons/low-battery.svg" style="width: 15px" alt="" />
+        </div>
+      </div>
+    </header>
+    <section class="px-2 pt-5 pb-3 d-flex align-items-center">
+      <div
+        class="notif"
+        style="width: min-content; z-index: 100"
+        onclick="window.history.go(-1); return false;"
+      >
+        <img
+          src="assets/icons/chevron-left.svg"
+          alt=""
+          class="border p-1 rounded-3"
+        />
+      </div>
+      <p class="text-center w-100 position-absolute left-0 fw-semibold fs-5">
+        Profil
+      </p>
+    </section>
+    <div
+      class="d-flex align-items-center flex-column justify-content-center w-100"
+    >
+      <img src="./assets/img/download-removebg-preview 1.png" alt="" />
+      <span class="h3" id="user_info"></span>
+      <div class="type-transaction" id="mail">alexdupres0n@gmail.com</div>
+    </div>
+    <main class="py-3 px-4">
+      <div
+        class="item my-3 d-flex justify-content-between align-items-center item-prop"
+      >
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="m-1">
+            <i class="bi bi-person-circle fs-1 mx-1"></i>
+          </div>
+          <a href="info-person.html" style="text-decoration: none">
+            <div class="d-flex flex-column">
+              <div class="item-title fw-medium">Informations personnels</div>
+            </div>
+          </a>
+        </div>
+        <img src="./assets/icons/greater-than.svg" alt="" />
+      </div>
+      <div
+        class="item my-3 d-flex justify-content-between align-items-center item-prop"
+      >
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="m-1">
+            <i class="bi bi-piggy-bank-fill fs-1 mx-1"></i>
+          </div>
+          <a href="tirelire.html" style="text-decoration: none">
+            <div class="d-flex flex-column">
+              <div class="item-title fw-medium">Tirelire</div>
+            </div>
+          </a>
+        </div>
+        <img src="./assets/icons/greater-than.svg" alt="" />
+      </div>
+      <div
+        class="item my-3 d-flex justify-content-between align-items-center item-prop"
+      >
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="m-1">
+            <i class="bi bi-arrow-repeat fs-1 mx-1"></i>
+          </div>
+          <a href="liste-quot.html" style="text-decoration: none">
+            <div class="d-flex flex-column">
+              <div class="item-title fw-medium">Liste quotodienne</div>
+            </div>
+          </a>
+        </div>
+        <img src="./assets/icons/greater-than.svg" alt="" />
+      </div>
+      <div
+        class="item my-3 d-flex justify-content-between align-items-center item-prop"
+      >
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="m-1">
+            <i class="bi bi-cash-stack fs-1 mx-1"></i>
+          </div>
+          <a href="modif-mensuelles.html" style="text-decoration: none">
+            <div class="d-flex flex-column">
+              <div class="item-title fw-medium">Transactions Mensuelles</div>
+            </div>
+          </a>
+        </div>
+        <img src="./assets/icons/greater-than.svg" alt="" />
+      </div>
+      <hr />
+    </main>
+    <div
+      class="d-flex justify-content-around align-items-center fixed-bottom bg-light pt-2 px-2"
+    >
+      <div
+        class="d-flex flex-column align-items-center justify-content-center action-items"
+      >
+        <a href="home.html"
+          ><img src="assets/icons/home.svg" width="16" alt=""
+        /></a>
+        <p class="nav-title">Accueil</p>
+      </div>
+      <div
+        class="d-flex flex-column align-items-center justify-content-center action-items"
+      >
+        <a href="solde.html"
+          ><img src="assets/icons/credit-card.svg" width="16" alt=""
+        /></a>
+        <p class="nav-title">Solde</p>
+      </div>
+      <div
+        class="d-flex flex-column align-items-center justify-content-center action-items"
+      >
+        <a href="#"
+          ><img src="assets/img/logo-without-text.png" width="64" alt=""
+        /></a>
+      </div>
+      <div
+        class="d-flex flex-column align-items-center justify-content-center action-items"
+      >
+        <a href="quotidien.html"
+          ><img src="assets/icons/refresh.svg" width="16" alt=""
+        /></a>
+        <p class="nav-title">Quotidien</p>
+      </div>
+      <div
+        class="d-flex flex-column align-items-center justify-content-center action-items"
+      >
+        <a href="#"><img src="assets/icons/user.svg" width="16" alt="" /></a>
+        <p class="nav-title">Profil</p>
+      </div>
+    </div>
+
+    <div style="height: 50px"></div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="assets/js/time.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function (event) {
+        loadUserInfo();
+        getMail();
+      });
+    </script>
+  </body>
+</html>
